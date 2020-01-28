@@ -16,7 +16,7 @@ list = Builder(action = 'xc16-objdump -S -D $SOURCE > $TARGET',
                src_suffix = 'elf')
 env.Append(BUILDERS = {'List' : list})
 
-env.Program('blink', ['blink.c',
+env.Program('cointest', ['cointest.c',
                       '../lib/elecanisms.c'])
-env.Hex('blink')
-env.List('blink')
+env.Hex('cointest')
+env.List('cointest')
